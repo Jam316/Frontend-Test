@@ -1,0 +1,163 @@
+{
+  "getTop3ReadBooks": [
+    {
+      "country_code": "SG",
+      "name": "Scope & Closure",
+      "author": "Kyle Simpson",
+      "borrower": [
+        "Ervin Howell",
+        "Kurtis Weisnatt",
+        "John Doe"
+      ]
+    },
+    {
+      "country_code": "SG",
+      "name": "The Art of War",
+      "author": "Joseph Nguyen",
+      "borrower": [
+        "Ervin Howell",
+        "Glenna Reichert",
+        "Nicholas Runolfsdottir V"
+      ]
+    },
+    {
+      "country_code": "SG",
+      "name": "Beyond Thoughts",
+      "author": "Joseph Nguyen",
+      "borrower": [
+        "Leanne Graham",
+        "Clementine Bauch",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "MY",
+      "name": "Types & Grammar",
+      "author": "Kyle Simpson",
+      "borrower": [
+        "Clementina DuBuque",
+        "Matthew",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "MY",
+      "name": "Especias",
+      "author": "Gwyn Novak",
+      "borrower": [
+        "Nicholas Runolfsdottir V",
+        "Clementine Bauch",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "MY",
+      "name": "Beyond Thoughts",
+      "author": "Joseph Nguyen",
+      "borrower": [
+        "Chelsey Dietrich",
+        "Mrs. Dennis Schulist",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "US",
+      "name": "Beyond Thoughts",
+      "author": "Gwyn Novak",
+      "borrower": [
+        "Clementina DuBuque",
+        "Mrs. Dennis Schulist",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "US",
+      "name": "Spice & Science",
+      "author": "Jay Shetty",
+      "borrower": [
+        "Paul Smith",
+        "Mrs. Dennis Schulist",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "US",
+      "name": "Think Like a Monk",
+      "author": "Jay Shetty",
+      "borrower": [
+        "Leanne Graham",
+        "Glenna Reichert",
+        "Patricia Lebsack"
+      ]
+    },
+    {
+      "country_code": "NZ",
+      "name": "Scope & Closure",
+      "author": "Kyle Simpson",
+      "borrower": [
+        "Ervin Howell",
+        "Kurtis Weisnatt",
+        "John Doe"
+      ]
+    },
+    {
+      "country_code": "NZ",
+      "name": "The Art of War",
+      "author": "Joseph Nguyen",
+      "borrower": [
+        "Ervin Howell",
+        "Glenna Reichert",
+        "Nicholas Runolfsdottir V"
+      ]
+    },
+    {
+      "country_code": "NZ",
+      "name": "Beyond Thoughts",
+      "author": "Joseph Nguyen",
+      "borrower": [
+        "Leanne Graham",
+        "Clementine Bauch",
+        "Patricia Lebsack"
+      ]
+    }
+  ],
+  "getRandomCountry": [
+    {
+      "full_name": "Canada",
+      "country_code": "CA"
+    },
+    {
+      "full_name": "Philippines",
+      "country_code": "PH"
+    },
+    {
+      "full_name": "Singapore",
+      "country_code": "SG"
+    },
+    {
+      "full_name": "Taiwan",
+      "country_code": "TW"
+    },
+    {
+      "full_name": "Malaysia",
+      "country_code": "MY"
+    },
+    {
+      "full_name": "United States",
+      "country_code": "US"
+    },
+    {
+      "full_name": "Australia",
+      "country_code": "AU"
+    },
+    {
+      "full_name": "New Zealand",
+      "country_code": "NZ"
+    },
+    {
+      "full_name": "Japan",
+      "country_code": "JP"
+    }
+  ]
+}
+
