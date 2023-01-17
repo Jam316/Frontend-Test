@@ -1,5 +1,5 @@
-import "./App.css";
-import React, { useState, useEffect, useCallback } from "react";
+import "./style.scss";
+import React, { useState, useEffect } from "react";
 import RandomCountry from "./components/RandomCountry";
 import BookItem from "./components/BookItem";
 import ErrorMessage from "./components/ErrorMessage";
@@ -14,7 +14,7 @@ function App() {
     activeIndex === index ? setActiveIndex(null) : setActiveIndex(index);
   };
 
-  const getTop3ReadBooks = () => {
+  const onClickRandomCountry = () => {
     const { country_code } =
       country[Math.floor(Math.random() * country.length)];
     setQuery(country_code);
@@ -42,20 +42,26 @@ function App() {
 
       if (isIgnored) {
         setBookItems(data);
+        console.log(data);
       }
     };
 
     fetchRandomCountry();
     fetchBooks();
 
-    return () => (isIgnored = false);
+    return () => {
+      isIgnored = false;
+    };
   }, [query]);
 
   return (
     <div className="App">
-      <RandomCountry countryCode={query} getTop3ReadBooks={getTop3ReadBooks} />
+      <RandomCountry
+        countryCode={query}
+        onClickRandomCountry={onClickRandomCountry}
+      />
       <div id="container">
-        <div className="row">
+        <div className="books">
           {bookItems.length > 0 ? (
             bookItems.map((props, index) => (
               <BookItem

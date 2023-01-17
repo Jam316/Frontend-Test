@@ -22,8 +22,8 @@
     },
     {
       "country_code": "SG",
-      "name": "Beyond Thoughts",
-      "author": "Joseph Nguyen",
+      "name": "Twilight",
+      "author": "Stephenie Meyer",
       "borrower": [
         "Leanne Graham",
         "Clementine Bauch",
@@ -32,8 +32,8 @@
     },
     {
       "country_code": "MY",
-      "name": "Types & Grammar",
-      "author": "Kyle Simpson",
+      "name": "Goldfinger",
+      "author": "Ian Fleming",
       "borrower": [
         "Clementina DuBuque",
         "Matthew",
@@ -52,8 +52,8 @@
     },
     {
       "country_code": "MY",
-      "name": "Beyond Thoughts",
-      "author": "Joseph Nguyen",
+      "name": "Steps to Christ",
+      "author": "Elen G. White",
       "borrower": [
         "Chelsey Dietrich",
         "Mrs. Dennis Schulist",
@@ -62,8 +62,8 @@
     },
     {
       "country_code": "US",
-      "name": "Beyond Thoughts",
-      "author": "Gwyn Novak",
+      "name": "Steps to Christ",
+      "author": "Elen G. White",
       "borrower": [
         "Clementina DuBuque",
         "Mrs. Dennis Schulist",
@@ -82,8 +82,8 @@
     },
     {
       "country_code": "US",
-      "name": "Think Like a Monk",
-      "author": "Jay Shetty",
+      "name": "Macbeth",
+      "author": "William Shakesphere",
       "borrower": [
         "Leanne Graham",
         "Glenna Reichert",
@@ -112,8 +112,8 @@
     },
     {
       "country_code": "NZ",
-      "name": "Beyond Thoughts",
-      "author": "Joseph Nguyen",
+      "name": "Steps to Christ",
+      "author": "Elen G. White",
       "borrower": [
         "Leanne Graham",
         "Clementine Bauch",
@@ -153,10 +153,6 @@
     {
       "full_name": "New Zealand",
       "country_code": "NZ"
-    },
-    {
-      "full_name": "Japan",
-      "country_code": "JP"
     }
   ]
 }

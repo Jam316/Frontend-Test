@@ -15,23 +15,12 @@ body {
   color: #000;
 }
 
-button {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  background: #F6ECEC;
-  border: 1.00847px solid #D46767;
-  box-sizing: border-box;
-  padding: 11.5px 21px;
-  cursor: pointer;
-}
-
 .App {
   position: relative;
   height: 100vh;
 }
 
-#randomCountry {
+#action-btn {
   position: absolute;
   margin: 25px;
 }
@@ -45,66 +34,67 @@ button {
   margin: 0 25px;
 }
 
-.row {
-  width: 550px;
+.btn {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  background: #F6ECEC;
+  border: 1.00847px solid #D46767;
+  box-sizing: border-box;
+  padding: 11.5px 21px;
+  cursor: pointer;
+}
+
+.books {
+  width: 500px;
   padding: 36px 45px;
   border: 1px solid #000;
   box-sizing: border-box;
 }
 
-.book-items {
-  list-style-type: none;
-  counter-reset: counter 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+.book {
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.book-item:last-child {
-  margin: 0 !important;
-}
+  &__author {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    align-self: flex-end;
+  }
 
-.book-toggle {
-  display: flex;
-  flex-direction: column;
-  background: #F7ECEC;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  transition: 0.3s;
-  cursor: pointer;
-  padding: 20px;
-}
+  &__collapse {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+  }
 
-.book-toggle h2, .counter {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 48px;
-  text-transform: capitalize;
-  margin: 0;
-}
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    background: #F7ECEC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 20px;
 
-.book-name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    h2, .counter {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 48px;
+      text-transform: capitalize;
+      margin: 0;
+    }
+  }
 
-.author {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 17px;
-  align-self: flex-end;
-}
-
-.book-collapse  {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: height 0.35s ease;
-}
-
-.book-collapse.show {
-  height: auto;
+  &:last-child {
+    margin: 0 !important;
+  }
 }
 
 .caret-arrow {
@@ -115,10 +105,10 @@ button {
   height: 22px;
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transform: rotateX(180deg);
-}
 
-.caret-arrow.toggled {
-  transform: rotateX(360deg);
+  &.toggled {
+    transform: rotateX(360deg);
+  }
 }
 
 .customers {

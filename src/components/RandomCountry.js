@@ -1,12 +1,15 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 
-const RandomCountry = ({ countryCode, getTop3ReadBooks }) => {
+const RandomCountry = ({ countryCode, onClickRandomCountry }) => {
   return (
-    <div id="randomCountry">
-      <button type="button" onClick={() => getTop3ReadBooks()}>
-        {`Get country: ${countryCode}`}
-      </button>
-    </div>
+    <button
+      type="button"
+      onClick={() => onClickRandomCountry()}
+      className="btn"
+      id="action-btn"
+    >
+      {`Get country: ${countryCode}`}
+    </button>
   );
 };
 

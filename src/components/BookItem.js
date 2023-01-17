@@ -9,7 +9,7 @@ const BookItem = ({ name, author, borrower, index, activeIndex, onToggle }) => {
 
   return (
     <div
-      className="book-item"
+      className="book"
       id={`book-item-${index + 1}`}
       style={
         activeIndex === index
@@ -17,12 +17,14 @@ const BookItem = ({ name, author, borrower, index, activeIndex, onToggle }) => {
           : { marginBottom: "32px" }
       }
     >
-      <div className="book-title">
+      <div className="book__title">
         <div
-          className={`book-toggle ${activeIndex === index ? "active" : ""}`}
+          className={`book__toggle ${
+            activeIndex === index ? "book__toggle--active" : ""
+          }`}
           onClick={() => onToggle(index)}
         >
-          <div className="book-name">
+          <div className="book__name">
             <span className="counter">{index + 1}</span>
             <h2>{name}</h2>
             <span
@@ -31,12 +33,12 @@ const BookItem = ({ name, author, borrower, index, activeIndex, onToggle }) => {
               }`}
             ></span>
           </div>
-          <div className="author">{`by ${author}`}</div>
+          <div className="book__author">{`by ${author}`}</div>
         </div>
       </div>
       <div
         ref={refEl}
-        className={`book-collapse ${activeIndex === index ? "show" : ""}`}
+        className="book__collapse"
         style={
           activeIndex === index && refEl.current
             ? { height: refEl.current.scrollHeight }
