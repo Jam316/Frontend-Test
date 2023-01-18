@@ -36,13 +36,12 @@ function App() {
     const fetchBooks = async () => {
       const data = await (
         await fetch(
-          `http://localhost:8080/getTop3ReadBooks?country_code=${query}`
+          `http://localhost:8080/getTop3ReadBook?country_code=${query}`
         )
       ).json();
 
       if (isIgnored) {
         setBookItems(data);
-        console.log(data);
       }
     };
 

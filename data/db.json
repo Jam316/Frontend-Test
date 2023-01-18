@@ -1,5 +1,5 @@
 {
-  "getTop3ReadBooks": [
+  "getTop3ReadBook": [
     {
       "country_code": "SG",
       "name": "Scope & Closure",
